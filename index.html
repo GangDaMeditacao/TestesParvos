@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,25 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeDex</title>
-    <link rel="stylesheet" href="app.css">
-    
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    
-    <div class="all" >
-        <h1>Pokedex</h1>
-        <Div class="pokedex" id="pokedex">
-         
-        </div>
-      
-        <button class="button"id="more">Ver Mais</button>
-        
+    <div class="container">
+        <h1>PokeDex</h1>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Pokemon.." title="Type in a name">
+        <select id="myInputTipo" onchange="myFunctiontipo()">
+            <option value="default">Type</option>
+            <option value="Fire">Fire</option>
+            <option value="Grass">Grass</option>
+            <option value="Water">Water</option>
+            <option value="Normal">Normal</option>
+          </select>
+            <div id="poke_container" class="poke_container">
+
+
+            </div>
     </div>
 
-    <script async src="app.js"></script>
-    <script defer src="app2.js"></script>
-    
+    <script src="main.js"></script>
 </body>
 
-</html>
